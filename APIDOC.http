@@ -1,0 +1,55 @@
+#api call to get data
+###
+GET http://127.0.0.1:8000/road/
+Accept: application/json
+
+#api call to create data
+###
+POST http://127.0.0.1:8000/road/
+Content-Type: application/json
+
+{
+    "title":"water logg",
+    "description":"Water log in high road severe",
+    "issue_type":"WATERLOGGING",
+    "priority":"HIGH",
+    "status":"REPORTED",
+    "location":"high road",
+    "landmark":"near post office",
+    "latitude":13.56,
+    "longitude":10.46,
+    "reported_by":"Hari",
+    "contact_number":5674839
+}
+
+#api call to retrieve data
+###
+GET http://127.0.0.1:8000/road/10/
+Accept: application/json
+
+#api call to update data
+###
+PUT http://127.0.0.1:8000/road/1/
+Content-Type: application/json
+
+{
+    "title":"water logg",
+    "description":"Water log in high road severe",
+    "issue_type":"WATERLOGGING",
+    "priority":"HIGH",
+    "status":"REPORTED",
+    "location":"high road",
+    "landmark":"near post office",
+    "latitude":15.56,
+    "longitude":10.46,
+    "reported_by":"Hari",
+    "contact_number":5674839
+}
+
+#api call to delete data
+###
+DELETE http://127.0.0.1:8000/road/1/
+Content-Type: application/json
+
+
+
